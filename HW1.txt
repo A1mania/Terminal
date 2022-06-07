@@ -1,0 +1,99 @@
+1) Посмотреть где я 
+$ pwd
+/c/Тестирование
+
+2) Создать папку 
+$ mkdir qatest
+
+3) Зайти в папку 
+$ cd qatest/
+
+4) Создать 3 папки
+$ mkdir folder1 folder2 folder3
+
+5) Зайти в любую папку
+$ cd folder1
+
+6) Создать 5 файлов (3 txt, 2 json)
+$ touch file1.txt file2.txt file3.txt
+$ cat > file4.json
+$ cat > file5.json
+
+7) Создать 3 папки
+$ mkdir folder11 folder21 folder31
+
+8) Вывести список содержимого папки
+$ ls -la
+total 4
+drwxr-xr-x 1 пк 197121 0 May 22 20:52 ./
+drwxr-xr-x 1 пк 197121 0 May 22 20:41 ../
+-rw-r--r-- 1 пк 197121 0 May 22 20:44 file1.txt
+-rw-r--r-- 1 пк 197121 0 May 22 20:44 file2.txt
+-rw-r--r-- 1 пк 197121 0 May 22 20:44 file3.txt
+-rw-r--r-- 1 пк 197121 0 May 22 20:48 file4.json
+-rw-r--r-- 1 пк 197121 0 May 22 20:48 file5.json
+drwxr-xr-x 1 пк 197121 0 May 22 20:52 folder11/
+drwxr-xr-x 1 пк 197121 0 May 22 20:52 folder21/
+drwxr-xr-x 1 пк 197121 0 May 22 20:52 folder31/
+
+9) + Открыть любой txt файл
+$ vim fie1.txt
+
+10) + написать туда что-нибудь, любой текст.
+-- INSERT --
+hello my friend
+123
+12345
+escape
+
+11) + сохранить и выйти.
+:wq
+
+12) Выйти из папки на уровень выше
+$ cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+$ mv folder1/file1.txt folder2/file1.txt
+$ mv folder1/file2.txt folder2/file2.txt
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+$ cp folder2/file1.txt folder1/file1.txt
+$ cp folder2/file2.txt folder1/file2.txt
+
+15) Найти файл по имени
+$ find . -name "file1.txt"
+./qatest/folder1/file1.txt
+./qatest/folder2/file1.txt
+
+16) просмотреть содержимое в реальном времени
+$ cat file1.txt
+hello my friend
+123
+12345
+
+$ grep 123 file1.txt
+123
+12345
+
+17) вывести несколько первых строк из текстового файла
+$ head -n3 file1.txt
+
+18) вывести несколько последних строк из текстового файла
+$ tail -n7 file1.txt
+
+19) просмотреть содержимое длинного файла 
+$ less HW1.txt
+q
+
+20) вывести дату и время
+$ date
+Sun May 22 22:06:04 RTZ 2022
+
+gjfhd
+20)
+kjgkytd
+
+
+
+
+
